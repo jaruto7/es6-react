@@ -38,7 +38,7 @@ class Stopwatch extends React.Component {
     }
     
     calculate () {
-        const times = Object.assign({}, this.state.times); // assgin poczytać
+        const times = this.state.times;
         times.miliseconds += 1;
         if (times.miliseconds >= 100) {
             times.seconds += 1;
